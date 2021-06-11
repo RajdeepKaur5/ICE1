@@ -20,13 +20,13 @@ public class CardTrick {
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+         int rand1=(int)Math.floor(Math.random()*8);
+            int rand2=(int)Math.floor(Math.random()*4);
+            c.setValue(rand1);
+            c.setSuit(Card.SUITS[rand2]);
+        System.out.println("Your card type : "+c.getSuit());
+        System.out.println("Your card value : "+c.getValue());
         }
-        
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
     }
     
 }
